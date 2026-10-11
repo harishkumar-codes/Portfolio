@@ -63,6 +63,12 @@ header.site{
 /* ---------- HERO ---------- */
 #hero{padding:9.5rem 0 5rem;background:var(--bg)}
 .hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:4rem;align-items:center}
+.hero-id{display:flex;align-items:center;gap:1.5rem}
+.avatar{
+  width:128px;height:160px;border-radius:16px;object-fit:cover;object-position:center top;flex-shrink:0;
+  border:3px solid #fff;
+  box-shadow:0 0 0 1px var(--border-strong),0 8px 24px rgba(15,23,42,.1);
+}
 .kicker{font-size:.8125rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
 h1{font-size:clamp(2.5rem,5.2vw,3.75rem);line-height:1.08;font-weight:700;letter-spacing:-.03em;color:var(--text)}
 .role-line{font-size:clamp(1.25rem,2.4vw,1.6rem);font-weight:500;color:var(--muted);margin-top:.5rem;letter-spacing:-.01em}
@@ -212,6 +218,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;background:var(--bg)
   .container{padding:0 1.25rem}
   #hero{padding:7.5rem 0 3.5rem}
   section.s{padding:4rem 0}
+  .hero-id{flex-direction:column;align-items:flex-start;gap:1.25rem}
   .skills,.cert-grid{grid-template-columns:1fr}
   .edu-row{grid-template-columns:1fr;gap:.25rem}
   .cert{flex-direction:column;gap:.25rem}
@@ -249,9 +256,14 @@ footer{border-top:1px solid var(--border);padding:1.75rem 0;background:var(--bg)
 <section id="hero">
   <div class="container hero-grid">
     <div>
-      <div class="kicker">Chennai &middot; Open to remote</div>
-      <h1>Harishkumar S</h1>
-      <p class="role-line">Full-Stack Developer</p>
+      <div class="hero-id">
+        <img src="harish.jpg" alt="Portrait of Harishkumar S" class="avatar" width="128" height="160">
+        <div>
+          <div class="kicker">Chennai &middot; Open to remote</div>
+          <h1>Harishkumar S</h1>
+          <p class="role-line">Full-Stack Developer</p>
+        </div>
+      </div>
       <p class="hero-desc">BCA graduate and <strong>Software Development Intern at Lyre Softronics</strong>. I build full-stack web applications, REST APIs and database designs using <strong>Laravel, React, Node.js, Express.js, MySQL and MongoDB</strong>.</p>
       <div class="hero-ctas">
         <a href="#projects" class="btn btn-primary">View projects</a>
